@@ -13,7 +13,7 @@ pkgs.stdenv.mkDerivation rec {
   installPhase = ''
     mkdir $out
     cp -r * $out
-    chmod +x $out/bin/{npm,npx}
+    chmod +x $out/bin/{npm,npx,node-gyp-bin/node-gyp}
   '';
   meta.priority = "100"; # Prevents collision with Node's built-in npm
 }
