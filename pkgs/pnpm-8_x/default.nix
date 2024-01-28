@@ -3,10 +3,10 @@
 
 pkgs.stdenv.mkDerivation rec {
   name = "pnpm";
-  version = "8.14.3";
+  version = "8.15.0";
   src = pkgs.fetchurl {
-    url = "https://registry.npmjs.org/pnpm/-/pnpm-8.14.3.tgz";
-    sha512 = "w+2A61g74+K37zHrlri5z6oFA+XUTscXUUEgtRh7L5M3NukDjFGlojrVgnkLpB1Kt4RhjIn6fiNl9mZWhdYS7g==";
+    url = "https://registry.npmjs.org/pnpm/-/pnpm-8.15.0.tgz";
+    sha512 = "6kVRfVKF0SPqwCw3k1Bfof1tqQovxg0ejZ4MHpKSiG7Pr/UT8GK50cyAIbuGFQM7GsW+o7LuP8FlptcDS75rAw==";
   };
   doCheck = true;
   phases = [ "unpackPhase" "installPhase" ];
