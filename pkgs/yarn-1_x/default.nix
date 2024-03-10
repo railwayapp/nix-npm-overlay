@@ -3,10 +3,10 @@
 
 pkgs.stdenv.mkDerivation rec {
   name = "yarn";
-  version = "1.22.21";
+  version = "1.22.22";
   src = pkgs.fetchurl {
-    url = "https://registry.npmjs.org/yarn/-/yarn-1.22.21.tgz";
-    sha512 = "ynXaJsADJ9JiZ84zU25XkPGOvVMmZ5b7tmTSpKURYwgELdjucAOydqIOrOfTxVYcNXe91xvLZwcRh68SR3liCg==";
+    url = "https://registry.npmjs.org/yarn/-/yarn-1.22.22.tgz";
+    sha512 = "prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==";
   };
   doCheck = true;
   phases = [ "unpackPhase" "installPhase" ];
