@@ -31,7 +31,7 @@ export async function getLatestVersion(packageName: string, condition: string) {
         return null;
       }
     })
-    .filter(Boolean) as SemVer[];
+    .filter((v): v is SemVer => v !== null && v.prerelease.length === 0);
 
   const latest = maxSatisfying(semverVersions, range);
 
