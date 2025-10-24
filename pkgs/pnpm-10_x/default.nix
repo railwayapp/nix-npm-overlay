@@ -3,10 +3,10 @@
 
 pkgs.stdenv.mkDerivation rec {
   name = "pnpm";
-  version = "10.17.1";
+  version = "10.19.1-oidc-test.3";
   src = pkgs.fetchurl {
-    url = "https://registry.npmjs.org/pnpm/-/pnpm-10.17.1.tgz";
-    sha512 = "F8Vg/KSGeulHOjiZrYSogzSRTzeb5G1FXL+S5c9LOdNJhdRS0lg7rxmWf6dstcF7yeJFUp0LmHRXIapyAOyveg==";
+    url = "https://registry.npmjs.org/pnpm/-/pnpm-10.19.1-oidc-test.3.tgz";
+    sha512 = "5ZYaS1a7N2IPl7ZdpMpWIWY0vzntNY7akl8PA2U01Fj6JJ2T7QAhQQUj+Lt+2FErYf5VMu0+gXd3kzZsa+AmtQ==";
   };
   doCheck = true;
   phases = [ "unpackPhase" "installPhase" ];
