@@ -12,5 +12,6 @@ self: super:
   pnpm-8_x = super.callPackage ./pkgs/pnpm-8_x { };
   pnpm-9_x = super.callPackage ./pkgs/pnpm-9_x { };
   pnpm-10_x = super.callPackage ./pkgs/pnpm-10_x { };
+  pnpm-11_x = super.callPackage ./pkgs/pnpm-11_x { };
   yarn-1_x = super.callPackage ./pkgs/yarn-1_x { };
 }
